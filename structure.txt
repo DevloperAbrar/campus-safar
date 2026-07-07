@@ -1,0 +1,65 @@
+campussafar/
+├── client/                        ← React + Vite
+│   ├── public/
+│   │   └── favicon, og-image
+│   ├── src/
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   ├── products/
+│   │   │   │   ├── StudyBoard.jsx
+│   │   │   │   └── CampusSuite.jsx
+│   │   │   └── admin/
+│   │   │       ├── Login.jsx       ← env credentials login
+│   │   │       └── Dashboard.jsx   ← protected
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── SEO.jsx             ← react-helmet-async
+│   │   │   ├── LeadForm.jsx        ← reused on Contact + demo CTAs
+│   │   │   └── admin/
+│   │   │       ├── StatsCard.jsx
+│   │   │       ├── LeadsTable.jsx
+│   │   │       └── VisitsChart.jsx
+│   │   ├── services/
+│   │   │   └── api.js              ← axios instance with baseURL
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx     ← stores JWT, isAdmin state
+│   │   ├── routes/
+│   │   │   └── ProtectedRoute.jsx  ← redirects to /admin/login if no token
+│   │   ├── hooks/
+│   │   │   ├── useScrollReveal.jsx
+│   │   │   └── useAnalytics.js     ← fires page view on route change
+│   │   └── utils/
+│   │       └── formatDate.js
+│   ├── .env                        ← VITE_API_URL=https://api.campussafar.com
+│   └── vite.config.js
+│
+└── server/                         ← Express + Node
+    ├── routes/
+    │   ├── contactRoutes.js        ← POST /api/contact 
+    │   ├── analyticsRoutes.js      ← POST /api/track, GET /api/analytics
+    |   |__ teamRoutes.js
+    │   └── adminRoutes.js          ← POST /api/admin/login, GET /api/admin/*
+    ├── controllers/
+    │   ├── contactController.js 
+    |   |__ teamController.js 
+    │   ├── analyticsController.js
+    │   └── adminController.js
+    ├── models/
+    │   ├── Lead.js                 ← name, email, phone, type, message, createdA 
+    │   ├── PageView.js             ← path, ip, userAgent, timestamp
+    |   |__ TeamMember.js
+    │   └── Event.js                ← type (demo_click, cta_click), meta, createdAt
+    ├── middleware/
+    │   ├── authMiddleware.js       ← verifies JWT on all /admin/* routes
+    │   └── rateLimiter.js          ← 10 req/min on /api/contact
+    ├── config/
+    │   └── db.js                   ← mongoose.connect(process.env.MONGO_URI)
+    ├── server.js
+    └── .env
+        ├── MONGO_URI
+        ├── JWT_SECRET
+        ├── ADMIN_EMAIL
+        └── ADMIN_PASSWORD_HASH     ← bcrypt hash, never plaintext
