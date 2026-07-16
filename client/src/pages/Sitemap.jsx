@@ -38,7 +38,7 @@ const groups = [
 
 const subdomains = [
   { label: 'Idea2Software App', url: 'https://i2s.campussafar.com' },
-  { label: 'SF StudyBoard (StudyBoard subdomain)', url: 'https://sfstudybaord.campussafar.com' },
+  { label: 'SF StudyBoard (StudyBoard subdomain)', url: 'https://sfstudyboard.campussafar.com' },
   { label: 'SF SmartLabs', url: 'https://sfsmartlabs.in' },
   { label: 'CampusDocs', url: 'https://campusdocs.campussafar.com' },
   { label: 'CampusSeating', url: 'https://seating.campussafar.com' },

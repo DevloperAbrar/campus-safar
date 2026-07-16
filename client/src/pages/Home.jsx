@@ -15,6 +15,7 @@ import AtulKumaChauhan from '../assets/testinomail/atulchauhan.png'
 import PKSinghhal from '../assets/testinomail/pksinghal.png'
 import PraveenBansal from '../assets/testinomail/praveenbansal.png'
 import AjayRaghuwanshi  from '../assets/testinomail/ajayraguwanshi.JPG'
+import Logo from '../assets/campussafar_logo.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -25,12 +26,12 @@ const SPRING_SOFT = { type: 'spring', stiffness: 260, damping: 28 }
 
 
 const homeSchema = {
+  "logo": Logo, // placeholder hai — real hosted logo URL daalo
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "CampusSafar Technologies Private Limited",
   "alternateName": "CampusSafar",
   "url": "https://campussafar.com",
-  "logo": "https://campussafar.com/logo.png", // ← replace with real hosted logo URL
   "description": "India's smartest campus platform offering SF StudyBoard for students and Idea2Software for institutes.",
   "founder": {
     "@type": "Person",
@@ -39,20 +40,20 @@ const homeSchema = {
     "sameAs": ["https://www.linkedin.com/in/moabrarqureshi/"]
   },
   "sameAs": [
-    "https://www.linkedin.com/company/sfsmartlabs/"
-    // add Google Business Profile URL here once claimed — this is the single biggest missing signal
-  ],
-  "address": { "@type": "PostalAddress", "addressLocality": "Gwalior", "addressRegion": "Madhya Pradesh", "addressCountry": "IN" },
+  "https://www.linkedin.com/company/sfsmartlabs/",
+  "https://www.google.com/maps/place/..." // GBP claim ke baad
+],
+  "address": { "@type": "PostalAddress", "addressLocality": "Khargone", "addressRegion": "Madhya Pradesh", "addressCountry": "IN" },
   "contactPoint": {
     "@type": "ContactPoint",
-    "email": "hello@campussafar.com",
+    "email": "info@campussafar.com",
     "telephone": "+91-77709-72867",
     "contactType": "customer support"
   },
   // Tells Google these apps are part of the same organization — helps entity consolidation across subdomains
   "subOrganization": [
     { "@type": "Organization", "name": "Idea2Software", "url": "https://i2s.campussafar.com" },
-    { "@type": "Organization", "name": "SF StudyBoard", "url": "https://sfstudybaord.campussafar.com" },
+    { "@type": "Organization", "name": "SF StudyBoard", "url": "https://sfstudyboard.campussafar.com" },
     { "@type": "Organization", "name": "CampusCMS", "url": "https://cms.campussafar.com" },
     { "@type": "Organization", "name": "CampusSeating", "url": "https://seating.campussafar.com" },
     { "@type": "Organization", "name": "CampusDocs", "url": "https://campusdocs.campussafar.com" },

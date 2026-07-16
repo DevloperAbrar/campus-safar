@@ -55,7 +55,7 @@ const aboutSchema = {
       '@type': 'Person',
       name: 'Mo Abrar Qureshi',
       jobTitle: 'Founder & CEO',
-      image: 'https://campussafar.com/founder.jpg', // ← replace with your real hosted founder photo URL
+      image: Founderimage, // ← replace with your real hosted founder photo URL
       description: 'B.Tech Software Engineer, Platform Architect, Entrepreneur. Founder of CampusSafar.',
       sameAs: [
         'https://www.linkedin.com/in/moabrarqureshi/'

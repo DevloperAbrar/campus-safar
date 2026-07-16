@@ -22,38 +22,39 @@ const modules = [
     icon: '🎯', title: 'Campus360', badge: 'Core Module', badgeColor: '#4F46E5',
     desc: '360° student growth tracking, beyond just marks — Academics, Life Skills, Olympiad & Leadership in one engine.',
     features: ['Fully configurable rubric engine, admin builds any assessment', 'Faculty & student attendance, subject-wise', 'Parent dashboard with radar charts & growth trends'],
-    dark: false
+    dark: false, href: '/products/student-development-tracking-system'
   },
   {
     icon: '📝', title: 'CampusCMS', badge: 'Core Module', badgeColor: '#0891B2',
     desc: 'Complete college management, one dashboard — Superadmin, Exam Controller, HOD, Faculty, Parent & Student roles.',
     features: ['Attendance, conduct, quiz, marks & result management', 'Recharts-based analytics for every department', 'Role-based access control'],
-    dark: false
+    dark: false, href: '/products/campus-management-system'
   },
   {
     icon: '🪑', title: 'CampusSeating', badge: 'Core Module', badgeColor: '#EA580C',
     desc: 'Exam seating, arranged automatically — no more manual charts or last-minute clashes.',
     features: ['Auto-generated seating charts', 'Room & capacity management', 'Conflict-free roll number distribution', 'Printable seating plans'],
-    dark: false
+    dark: false, href: '/products/exam-seating-arrangement-software'
   },
   {
     icon: '📁', title: 'CampusDocs', badge: 'Core Module', badgeColor: '#0A1628',
     desc: 'Certificates and documents, self-hosted — streamlined certification, authenticity ensured.',
     features: ['Canva-style visual template builder', 'Bulk certificate generation', 'Student field mapping', 'PDF export, no third-party storage'],
-    dark: false
+    dark: false, href: '/products/certificate-document-management-system'
   },
   {
     icon: '💳', title: 'CampusERP', badge: 'Core Module', badgeColor: '#7C3AED',
     desc: 'Fees, admissions and records, unified — one dashboard for everything back-office.',
     features: ['Admission & fee tracking', 'Marksheet generation', 'Faculty chain management', 'Audit-friendly record keeping'],
-    dark: false
+    dark: false, href: '/products/school-fee-admission-management-system'
   },
   {
     icon: '💻', title: 'Custom Software Development', badge: 'Bespoke', badgeColor: '#FF5500',
     desc: 'Your idea, engineered end-to-end — beyond the suite, built entirely around you.',
     features: ['Full-stack web & mobile apps', 'API design & third-party integrations', 'Cloud infrastructure & deployment', 'Ongoing support after launch'],
     dark: true, cta: true
-  }
+  },
+
 ]
 
 const testimonials = [
@@ -530,9 +531,15 @@ const CampusSuite = () => (
                     <span style={{ color: m.dark ? '#94A3B8' : '#374151' }}>{f}</span>
                   </div>
                 ))}
-                <a href={m.cta ? '/contact' : '#modules'} className="link-anim" style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 6, color: m.dark ? '#FF7A33' : '#FF5500', fontSize: 13, fontWeight: 700 }}>
-                  Learn More →
-                </a>
+                {m.href ? (
+                  <Link to={m.href} className="link-anim" style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 6, color: m.dark ? '#FF7A33' : '#FF5500', fontSize: 13, fontWeight: 700 }}>
+                    Learn More →
+                  </Link>
+                ) : (
+                  <a href={m.cta ? '/contact' : '#modules'} className="link-anim" style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 6, color: m.dark ? '#FF7A33' : '#FF5500', fontSize: 13, fontWeight: 700 }}>
+                    Learn More →
+                  </a>
+                )}
               </div>
             </Reveal>
           ))}
