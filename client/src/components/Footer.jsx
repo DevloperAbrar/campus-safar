@@ -74,8 +74,8 @@ const Footer = () => {
                 {l.label}
               </Link>
             ))}
-            <a href="mailto:hello@campussafar.com" style={{ display: 'block', fontSize: 14, color: '#6B7280', marginBottom: 12, textDecoration: 'none' }}>
-              hello@campussafar.com
+            <a href="mailto:info@campussafar.com" style={{ display: 'block', fontSize: 14, color: '#6B7280', marginBottom: 12, textDecoration: 'none' }}>
+              info@campussafar.com
             </a>
             <a href="tel:+917770972867" style={{ display: 'block', fontSize: 14, color: '#6B7280', marginBottom: 12, textDecoration: 'none' }}>
               +91 77709 72867
