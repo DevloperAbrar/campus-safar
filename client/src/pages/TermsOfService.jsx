@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom'
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Terms of Service — CampusSafar",
+  "name": "Terms of Service -CampusSafar",
   "url": "https://campussafar.com/terms-of-service",
 }
 
 const sections = [
   {
     title: '1. Acceptance of Terms',
-    body: `By accessing or using CampusSafar's website or products — SF StudyBoard, Campus360, CampusCMS, CampusSeating, CampusDocs, and CampusERP — you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.`
+    body: `By accessing or using CampusSafar's website or products -SF StudyBoard, Campus360, CampusCMS, CampusSeating, CampusDocs, and CampusERP -you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.`
   },
   {
     title: '2. Description of Services',
@@ -37,7 +37,7 @@ const sections = [
   },
   {
     title: '7. Intellectual Property',
-    body: `All software, design, branding, and content on CampusSafar's platforms — excluding institute-owned data — remain the intellectual property of CampusSafar Technologies Pvt. Ltd. and may not be copied or redistributed without permission.`
+    body: `All software, design, branding, and content on CampusSafar's platforms -excluding institute-owned data -remain the intellectual property of CampusSafar Technologies Pvt. Ltd. and may not be copied or redistributed without permission.`
   },
   {
     title: '8. Service Availability',
@@ -68,7 +68,7 @@ const sections = [
 const TermsOfService = () => (
   <>
     <SEO
-      title="Terms of Service — CampusSafar"
+      title="Terms of Service -CampusSafar"
       description="Read the Terms of Service governing use of CampusSafar's website and products, including SF StudyBoard and Idea2Software."
       canonical="https://campussafar.com/terms-of-service"
       schema={schema}

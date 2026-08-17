@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Sitemap — CampusSafar",
+  "name": "Sitemap -CampusSafar",
   "url": "https://campussafar.com/sitemap",
 }
 
@@ -67,8 +67,8 @@ const LinkCard = ({ label, to, external }) => {
 const Sitemap = () => (
   <>
     <SEO
-      title="Sitemap — CampusSafar"
-      description="Full sitemap of CampusSafar — SF StudyBoard, Idea2Software, and all CampusSafar products and pages."
+      title="Sitemap -CampusSafar"
+      description="Full sitemap of CampusSafar -SF StudyBoard, Idea2Software, and all CampusSafar products and pages."
       canonical="https://campussafar.com/sitemap"
       schema={schema}
     />
@@ -98,7 +98,7 @@ const Sitemap = () => (
 
         <div>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: '#0A1628', marginBottom: 8 }}>CampusSafar Product Apps</h2>
-          <p style={{ fontSize: 13.5, color: '#9CA3AF', marginBottom: 16 }}>These are live application subdomains — sign in requires an institute or student account.</p>
+          <p style={{ fontSize: 13.5, color: '#9CA3AF', marginBottom: 16 }}>These are live application subdomains -sign in requires an institute or student account.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
             {subdomains.map(s => <LinkCard key={s.label} label={s.label} to={s.url} external />)}
           </div>

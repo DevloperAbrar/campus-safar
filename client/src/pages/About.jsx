@@ -10,7 +10,7 @@ import api from '../services/api'
 import Founderimage from '../assets/team member/AbrarImage.png'
 gsap.registerPlugin(ScrollTrigger)
 
-// ─── Founder (hardcoded — edit imageUrl below) ──────────────────────────────
+// ─── Founder (hardcoded -edit imageUrl below) ──────────────────────────────
 const FOUNDER = {
   name: 'Mo Abrar Qureshi',
   title: 'Founder & CEO',
@@ -41,14 +41,14 @@ const aboutSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
   name: 'About CampusSafar',
-  description: 'Learn about CampusSafar — built by students for students. Meet Founder Mo Abrar Qureshi and the team building India\'s smartest campus platform.',
+  description: 'Learn about CampusSafar -built by students for students. Meet Founder Mo Abrar Qureshi and the team building India\'s smartest campus platform.',
   mainEntity: {
     '@type': 'Organization',
     name: 'CampusSafar Technologies Private Limited',
     url: 'https://campussafar.com',
     logo: 'https://campussafar.com/logo.png', // ← replace with your real hosted logo URL
     sameAs: [
-      'https://www.linkedin.com/company/sfsmartlabs/', // rename this page to CampusSafar Technologies — see note above
+      'https://www.linkedin.com/company/sfsmartlabs/', // rename this page to CampusSafar Technologies -see note above
       // add here once created: Instagram, X/Twitter, Crunchbase, Google Business Profile URL
     ],
     founder: {
@@ -262,7 +262,7 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Us — Built by Students, for Students"
+        title="About Us -Built by Students, for Students"
         description="CampusSafar was founded by Mo Abrar Qureshi to solve real campus problems. Meet our team building India's smartest campus platform."
         canonical="https://campussafar.com/about"
         schema={aboutSchema}
@@ -319,7 +319,7 @@ const About = () => {
 
                 <span style={{ display: 'inline-block', border: '1px solid #E5E7EB', borderRadius: 999, padding: '4px 14px', fontSize: 13, fontWeight: 500, color: '#6B7280', marginBottom: 20 }}>{FOUNDER.title}</span>
 
-                {/* Founder avatar — image if URL set, else initials */}
+                {/* Founder avatar -image if URL set, else initials */}
                 <div style={{ position: 'relative', width: 110, height: 110, marginBottom: 20 }}>
                   <motion.div
                     animate={{ scale: [1, 1.3, 1], opacity: [0.4, 0, 0.4] }}

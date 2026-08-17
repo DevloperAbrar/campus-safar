@@ -64,12 +64,12 @@ const Reveal = ({ children, variants, delay = 0, style, className }) => {
   )
 }
 
-// ── FAQ Data — easy to extend ──────────────────────────────────────────────
+// ── FAQ Data -easy to extend ──────────────────────────────────────────────
 // To add more FAQs: just push a new { q, a } object into either array below.
 const studentFaqs = [
   {
     q: 'Is SF StudyBoard really free?',
-    a: 'Yes — our base plan is free forever. Students get access to PYQs, AI Doubt Solver, and basic test series at zero cost.'
+    a: 'Yes -our base plan is free forever. Students get access to PYQs, AI Doubt Solver, and basic test series at zero cost.'
   },
   {
     q: 'Which exams does StudyBoard cover?',
@@ -77,11 +77,11 @@ const studentFaqs = [
   },
   {
     q: 'Do I need to download an app?',
-    a: 'No app download needed! SF StudyBoard is fully web-based. Open it on any device — mobile, tablet, or desktop — and start practising instantly.'
+    a: 'No app download needed! SF StudyBoard is fully web-based. Open it on any device -mobile, tablet, or desktop -and start practising instantly.'
   },
   {
     q: 'What is the AI Doubt Solver?',
-    a: 'The AI Doubt Solver gives you instant, step-by-step explanations for any question — 24/7. Just type or paste your doubt and get a clear answer in seconds.'
+    a: 'The AI Doubt Solver gives you instant, step-by-step explanations for any question -24/7. Just type or paste your doubt and get a clear answer in seconds.'
   },
   {
     q: 'How many virtual labs are available?',
@@ -92,7 +92,7 @@ const studentFaqs = [
 const instituteFaqs = [
   {
     q: 'How long does Idea2Software setup take?',
-    a: 'Our team sets everything up within 24 hours of your demo call. No IT team needed on your side — we handle the full configuration.'
+    a: 'Our team sets everything up within 24 hours of your demo call. No IT team needed on your side -we handle the full configuration.'
   },
   {
     q: 'What modules does Idea2Software include?',
@@ -104,7 +104,7 @@ const instituteFaqs = [
   },
   {
     q: 'How do I book a demo for my college?',
-    a: "Fill the form on this page or WhatsApp us directly. We'll schedule a free 30-min walkthrough of Idea2Software at your convenience — no obligation."
+    a: "Fill the form on this page or WhatsApp us directly. We'll schedule a free 30-min walkthrough of Idea2Software at your convenience -no obligation."
   },
   {
     q: 'Is there a cost to get started?',
@@ -258,8 +258,8 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us — Let's Talk"
-        description="Get in touch with CampusSafar. Student support, institute demo booking, WhatsApp — we're here to help."
+        title="Contact Us -Let's Talk"
+        description="Get in touch with CampusSafar. Student support, institute demo booking, WhatsApp -we're here to help."
         canonical="https://campussafar.com/contact"
         schema={contactSchema}
       />
@@ -339,7 +339,7 @@ const Contact = () => {
         <div className="container" style={{ padding: isMobile ? '0 16px' : undefined }}>
           <div style={gridStyle}>
 
-            {/* Left — contact info */}
+            {/* Left -contact info */}
             <div>
               <Reveal>
                 <h2 style={{ fontSize: isMobile ? 22 : 28, fontWeight: 800, color: '#0A1628', marginBottom: 8 }}>
@@ -388,7 +388,7 @@ const Contact = () => {
               </Reveal>
             </div>
 
-            {/* Right — form card */}
+            {/* Right -form card */}
             <Reveal delay={0.15} variants={formRevealVariants}>
               <motion.div
                 whileHover={{ boxShadow: '0 24px 64px rgba(0,0,0,0.07)' }}
@@ -416,7 +416,7 @@ const Contact = () => {
         <CurveDivider fromColor="#ffffff" toColor="#F8FAFF" height={56} />
       </div>
 
-      {/* ── FAQ — Two Column ─────────────────────────────────────────────── */}
+      {/* ── FAQ -Two Column ─────────────────────────────────────────────── */}
       <section className="section" style={{ background: '#F8FAFF' }}>
         <div className="container" style={{ padding: isMobile ? '0 16px' : undefined }}>
 
@@ -425,7 +425,7 @@ const Contact = () => {
             <span className="badge">FAQ</span>
             <h2 className="section-title">Common Questions.</h2>
             <p className="section-sub" style={{ maxWidth: 500, margin: '0 auto' }}>
-              Find answers for students and institutes — two separate sections, one place.
+              Find answers for students and institutes -two separate sections, one place.
             </p>
           </Reveal>
 
@@ -446,7 +446,7 @@ const Contact = () => {
               accentColor="#FF5500"
             />
 
-            {/* Divider — vertical on desktop, horizontal on mobile */}
+            {/* Divider -vertical on desktop, horizontal on mobile */}
             {!isMobile && (
               <div style={{ display: 'none' }} />
             )}

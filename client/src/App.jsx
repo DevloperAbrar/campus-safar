@@ -17,6 +17,9 @@ import Campus360 from './pages/products/Campus360'
 import CampusERP from './pages/products/CampusERP'
 import CampusDocs from './pages/products/CampusDocs'
 
+import CustomDev from './pages/CustomDevelopment'
+import Pricing from './pages/Pricing'
+
 const AnalyticsTracker = () => { useAnalytics(); return null; }
 
 function App() {
@@ -38,6 +41,8 @@ function App() {
         <Route path="/products/exam-seating-arrangement-software" element={<CampusSeating />} />
         <Route path="/products/student-development-tracking-system" element={<Campus360 />} />
         <Route path="/products/school-fee-admission-management-system" element={<CampusERP />} />
+        <Route path="/custom-development" element={<CustomDev />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/products/certificate-document-management-system" element={<CampusDocs />} />
         <Route path="/admin/dashboard" element={
           <ProtectedRoute><AdminDashboard /></ProtectedRoute>

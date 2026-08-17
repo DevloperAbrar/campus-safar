@@ -12,7 +12,7 @@ const idea2softwareSchema = {
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "url": "https://i2s.campussafar.com",
-  "description": "Idea2Software by CampusSafar — complete institute management suite. Campus360, CampusCMS, CampusSeating, CampusDocs and CampusERP, all in one dashboard.",
+  "description": "Idea2Software by CampusSafar -complete institute management suite. Campus360, CampusCMS, CampusSeating, CampusDocs and CampusERP, all in one dashboard.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "description": "Free demo available" },
   "provider": { "@type": "Organization", "name": "CampusSafar", "url": "https://campussafar.com" }
 }
@@ -20,37 +20,37 @@ const idea2softwareSchema = {
 const modules = [
   {
     icon: '🎯', title: 'Campus360', badge: 'Core Module', badgeColor: '#4F46E5',
-    desc: '360° student growth tracking, beyond just marks — Academics, Life Skills, Olympiad & Leadership in one engine.',
+    desc: '360° student growth tracking, beyond just marks -Academics, Life Skills, Olympiad & Leadership in one engine.',
     features: ['Fully configurable rubric engine, admin builds any assessment', 'Faculty & student attendance, subject-wise', 'Parent dashboard with radar charts & growth trends'],
     dark: false, href: '/products/student-development-tracking-system'
   },
   {
     icon: '📝', title: 'CampusCMS', badge: 'Core Module', badgeColor: '#0891B2',
-    desc: 'Complete college management, one dashboard — Superadmin, Exam Controller, HOD, Faculty, Parent & Student roles.',
+    desc: 'Complete college management, one dashboard -Superadmin, Exam Controller, HOD, Faculty, Parent & Student roles.',
     features: ['Attendance, conduct, quiz, marks & result management', 'Recharts-based analytics for every department', 'Role-based access control'],
     dark: false, href: '/products/campus-management-system'
   },
   {
     icon: '🪑', title: 'CampusSeating', badge: 'Core Module', badgeColor: '#EA580C',
-    desc: 'Exam seating, arranged automatically — no more manual charts or last-minute clashes.',
+    desc: 'Exam seating, arranged automatically -no more manual charts or last-minute clashes.',
     features: ['Auto-generated seating charts', 'Room & capacity management', 'Conflict-free roll number distribution', 'Printable seating plans'],
     dark: false, href: '/products/exam-seating-arrangement-software'
   },
   {
     icon: '📁', title: 'CampusDocs', badge: 'Core Module', badgeColor: '#0A1628',
-    desc: 'Certificates and documents, self-hosted — streamlined certification, authenticity ensured.',
+    desc: 'Certificates and documents, self-hosted -streamlined certification, authenticity ensured.',
     features: ['Canva-style visual template builder', 'Bulk certificate generation', 'Student field mapping', 'PDF export, no third-party storage'],
     dark: false, href: '/products/certificate-document-management-system'
   },
   {
     icon: '💳', title: 'CampusERP', badge: 'Core Module', badgeColor: '#7C3AED',
-    desc: 'Fees, admissions and records, unified — one dashboard for everything back-office.',
+    desc: 'Fees, admissions and records, unified -one dashboard for everything back-office.',
     features: ['Admission & fee tracking', 'Marksheet generation', 'Faculty chain management', 'Audit-friendly record keeping'],
     dark: false, href: '/products/school-fee-admission-management-system'
   },
   {
     icon: '💻', title: 'Custom Software Development', badge: 'Bespoke', badgeColor: '#FF5500',
-    desc: 'Your idea, engineered end-to-end — beyond the suite, built entirely around you.',
+    desc: 'Your idea, engineered end-to-end -beyond the suite, built entirely around you.',
     features: ['Full-stack web & mobile apps', 'API design & third-party integrations', 'Cloud infrastructure & deployment', 'Ongoing support after launch'],
     dark: true, cta: true
   },
@@ -309,8 +309,8 @@ const TestimonialSlider = () => {
 const CampusSuite = () => (
   <>
     <SEO
-      title="Idea2Software — One Dashboard for Your Entire Institute"
-      description="Idea2Software by CampusSafar. Campus360, CampusCMS, CampusSeating, CampusDocs and CampusERP — all in one institute dashboard. Free demo available."
+      title="Idea2Software -One Dashboard for Your Entire Institute"
+      description="Idea2Software by CampusSafar. Campus360, CampusCMS, CampusSeating, CampusDocs and CampusERP -all in one institute dashboard. Free demo available."
       canonical="https://campussafar.com/products/campus-suite"
       schema={idea2softwareSchema}
     />
@@ -432,7 +432,7 @@ const CampusSuite = () => (
             animationDelay: '0.3s'
           }}>
             <div style={{ padding: '14px 20px', borderBottom: '1px solid #F3F4F6', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span style={{ fontWeight: 700, fontSize: 15, color: '#0A1628' }}>Idea2Software — Dashboard</span>
+              <span style={{ fontWeight: 700, fontSize: 15, color: '#0A1628' }}>Idea2Software -Dashboard</span>
               <div style={{ width: 32, height: 32, background: '#FF5500', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 13, fontWeight: 700 }}>AD</div>
             </div>
             <div style={{ padding: '20px' }}>
@@ -509,7 +509,7 @@ const CampusSuite = () => (
         <Reveal className="text-center" style={{ marginBottom: 56 }}>
           <span className="badge">🎓 What's Inside Idea2Software</span>
           <h2 className="section-title">Five Modules. One Unified Platform.</h2>
-          <p className="section-sub">Everything your institute needs — student development to documents, all connected.</p>
+          <p className="section-sub">Everything your institute needs -student development to documents, all connected.</p>
         </Reveal>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 20 }}>
           {modules.map((m, i) => (

@@ -2,8 +2,8 @@ import { Helmet } from 'react-helmet-async'
 
 const SEO = ({ title, description, canonical, schema }) => {
   const siteName = 'CampusSafar'
-  const fullTitle = title ? `${title} | ${siteName}` : `${siteName} — India's Smartest Campus Platform`
-  const defaultDesc = 'CampusSafar offers SF StudyBoard for JEE, NEET, Board exam prep with 15,000+ PYQs, virtual labs, AI doubt solver — and Campus Suite AMS for institute management. Free to start.'
+  const fullTitle = title ? `${title} | ${siteName}` : `${siteName} -India's Smartest Campus Platform`
+  const defaultDesc = 'CampusSafar offers SF StudyBoard for JEE, NEET, Board exam prep with 15,000+ PYQs, virtual labs, AI doubt solver -and Campus Suite AMS for institute management. Free to start.'
 
   return (
     <Helmet>

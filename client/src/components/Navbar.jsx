@@ -21,6 +21,13 @@ const Navbar = () => {
   // Close mobile menu on route change
   useEffect(() => { setMobileOpen(false) }, [location])
 
+  const navLinks = [
+    { label: 'Custom Development', path: '/custom-development' },
+    { label: 'Pricing', path: '/pricing' },
+    { label: 'About', path: '/about' },
+    { label: 'Contact', path: '/contact' },
+  ]
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
@@ -45,21 +52,11 @@ const Navbar = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 400, damping: 15 }}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-            }}
-          >
+            style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img
               src={CampusSafarLogo}
               alt="CampusSafar Logo"
-              style={{
-                height: 42,
-                width: 'auto',
-                objectFit: 'contain',
-                display: 'block',
-              }}
+              style={{ height: 42, width: 'auto', objectFit: 'contain', display: 'block' }}
             />
           </motion.div>
         </Link>
@@ -102,7 +99,7 @@ const Navbar = () => {
                   }}>
                   {[
                     { to: '/products/studyboard', title: 'SF StudyBoard', sub: 'For Students & Parents', icon: '🎓' },
-                    { to: '/products/idea-2-software', title: 'Idea2Software', sub: 'For Colleges & Schools', icon: '🏛' }
+                    { to: '/products/idea-2-software', title: 'Idea2Software', sub: 'For Institutes & Businesses', icon: '🏛' }
                   ].map((item, i) => (
                     <motion.div key={item.to}
                       initial={{ opacity: 0, x: -8 }}
@@ -124,10 +121,7 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          {[
-            { label: 'About', path: '/about' },
-            { label: 'Contact', path: '/contact' },
-          ].map(item => (
+          {navLinks.map(item => (
             <Link key={item.label} to={item.path} style={{
               padding: '8px 14px', fontSize: 15, fontWeight: 500,
               color: isActive(item.path) ? '#FF5500' : '#6B7280',
@@ -143,10 +137,9 @@ const Navbar = () => {
             </Link>
           ))}
 
-
           <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
             <Link to="/contact"
-              onClick={() => trackEvent('cta_click', { button: 'get_started_free', location: 'navbar' })}
+              onClick={() => trackEvent('cta_click', { button: 'book_a_demo', location: 'navbar' })}
               style={{
                 marginLeft: 8, padding: '10px 20px',
                 background: '#FF5500', color: '#fff',
@@ -155,7 +148,7 @@ const Navbar = () => {
               }}
               onMouseEnter={e => e.currentTarget.style.background = '#E04A00'}
               onMouseLeave={e => e.currentTarget.style.background = '#FF5500'}>
-              Get Started Free
+              Book a Demo
             </Link>
           </motion.div>
         </div>
@@ -189,6 +182,8 @@ const Navbar = () => {
               {[
                 { to: '/products/studyboard', label: 'SF StudyBoard' },
                 { to: '/products/idea-2-software', label: 'Idea2Software' },
+                { to: '/custom-development', label: 'Custom Development' },
+                { to: '/pricing', label: 'Pricing' },
                 { to: '/about', label: 'About' },
                 { to: '/contact', label: 'Contact' },
               ].map((item, i) => (
@@ -202,11 +197,11 @@ const Navbar = () => {
                 </motion.div>
               ))}
               <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}>
-                <Link to="/products/studyboard" style={{
+                <Link to="/contact" style={{
                   display: 'block', marginTop: 16, padding: '14px',
                   background: '#FF5500', color: '#fff', borderRadius: 10,
                   fontWeight: 600, textAlign: 'center', textDecoration: 'none'
-                }}>Get Started Free</Link>
+                }}>Book a Demo</Link>
               </motion.div>
             </div>
           </motion.div>

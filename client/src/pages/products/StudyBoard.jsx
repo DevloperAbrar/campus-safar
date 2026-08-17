@@ -12,7 +12,7 @@ const studyBoardSchema = {
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
-  "description": "SF StudyBoard — India's most complete student learning platform. 50,000+ PYQs for JEE, NEET, Boards. Virtual labs, AI doubt solver, test series. Free forever.",
+  "description": "SF StudyBoard -India's most complete student learning platform. 50,000+ PYQs for JEE, NEET, Boards. Virtual labs, AI doubt solver, test series. Free forever.",
   "provider": { "@type": "Organization", "name": "CampusSafar", "url": "https://campussafar.com" }
 }
 
@@ -151,7 +151,7 @@ const StudyBoard = () => {
   return (
     <>
       <SEO
-        title="SF StudyBoard — India's Most Complete Student Learning Platform"
+        title="SF StudyBoard -India's Most Complete Student Learning Platform"
         description="Practice JEE, NEET, Board PYQs with 50,000+ questions. 600+ virtual labs, AI doubt solver, mock tests, formula books. Free to start. No app download needed."
         canonical="https://campussafar.com/products/studyboard"
         schema={studyBoardSchema}
@@ -217,7 +217,7 @@ const StudyBoard = () => {
               </div>
 
               <p className="hero-anim" style={{ fontSize: 16, color: '#94A3B8', lineHeight: 1.7, marginBottom: 28, maxWidth: 520, animationDelay: '0.16s' }}>
-                India's most complete student learning platform — practice PYQs, attempt mock tests,
+                India's most complete student learning platform -practice PYQs, attempt mock tests,
                 explore virtual labs and solve doubts with AI. Free to start, no app download needed.
               </p>
 
@@ -352,7 +352,7 @@ const StudyBoard = () => {
           <Reveal className="text-center" style={{ marginBottom: 56 }}>
             <span className="badge">⭐ Everything Inside StudyBoard</span>
             <h2 className="section-title">Six Powerful Tools. One Platform.</h2>
-            <p className="section-sub">Everything a serious student needs — nothing they don't.</p>
+            <p className="section-sub">Everything a serious student needs -nothing they don't.</p>
           </Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
             {tools.map((tool, i) => (
@@ -414,7 +414,7 @@ const StudyBoard = () => {
                 border: '1px solid rgba(255,255,255,0.1)',
                 borderRadius: 999, fontSize: 12, color: '#94A3B8', marginBottom: 24
               }}>
-                Start Today — It's Free
+                Start Today -It's Free
               </span>
 
               <h2 style={{

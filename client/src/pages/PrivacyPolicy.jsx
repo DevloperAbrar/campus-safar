@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Privacy Policy — CampusSafar",
+  "name": "Privacy Policy -CampusSafar",
   "url": "https://campussafar.com/privacy-policy",
 }
 
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     title: '6. Data Security',
-    body: `We use reasonable technical and organizational measures — including encrypted connections, access controls, and secure hosting — to protect information against unauthorized access, alteration, or disclosure. No method of transmission over the internet is 100% secure.`
+    body: `We use reasonable technical and organizational measures -including encrypted connections, access controls, and secure hosting -to protect information against unauthorized access, alteration, or disclosure. No method of transmission over the internet is 100% secure.`
   },
   {
     title: '7. Data Retention',
@@ -60,7 +60,7 @@ const sections = [
 const PrivacyPolicy = () => (
   <>
     <SEO
-      title="Privacy Policy — CampusSafar"
+      title="Privacy Policy -CampusSafar"
       description="Read CampusSafar's Privacy Policy covering how we collect, use, and protect data across SF StudyBoard and Idea2Software."
       canonical="https://campussafar.com/privacy-policy"
       schema={schema}
