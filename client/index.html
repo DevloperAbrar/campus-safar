@@ -9,6 +9,39 @@
     <meta name="theme-color" content="#FF5500" />
     <meta name="author" content="CampusSafar Technologies Private Limited" />
 
+    <style>
+      html, body { margin: 0; background: #ffffff; }
+      /* Prerendered SEO content: readable by crawlers, not shown to visitors */
+      #root > main[data-prerender] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      /* Loading screen until React mounts (removed automatically when React replaces #root) */
+      #boot {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0A1628;
+        z-index: 9999;
+      }
+      #boot .ring {
+        width: 44px;
+        height: 44px;
+        border: 4px solid rgba(255, 255, 255, 0.2);
+        border-top-color: #FF5500;
+        border-radius: 50%;
+        animation: boot-spin 0.8s linear infinite;
+      }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+    </style>
+
     <!--seo:start-->
     <title>School Management Software &amp; Website Development | CampusSafar</title>
     <meta name="description" content="CampusSafar builds school and college management software and custom websites for institutes and businesses across India. Attendance, marks, fees, report cards. Free demo." />
@@ -28,6 +61,7 @@
     <!--seo:end-->
   </head>
   <body>
+    <div id="boot" aria-hidden="true"><div class="ring"></div></div>
     <div id="root"><!--seo:root--></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
