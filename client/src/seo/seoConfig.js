@@ -18,7 +18,7 @@ export const SITE = {
   streetAddress: '',
   postalCode: '',
   ogImage: 'https://campussafar.com/og-image.png', // create a 1200x630 PNG at client/public/og-image.png
-  logo: 'https://campussafar.com/favicon.svg',
+  logo: 'https://campussafar.com/favicon.png',
   founder: { name: 'Mo Abrar Qureshi', linkedin: 'https://www.linkedin.com/in/moabrarqureshi/' },
   sameAs: [
     'https://www.linkedin.com/company/sfsmartlabs/',
