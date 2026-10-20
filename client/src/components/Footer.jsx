@@ -3,6 +3,8 @@ import CampusSafarLogo from '../assets/logo_CampusSafar.png'
 
 const productLinks = [
   { label: 'SF StudyBoard', to: '/products/studyboard' },
+  { label: 'School Management Software', to: '/school-management-software' },
+  { label: 'Coaching Institute Software', to: '/coaching-institute-software' },
   { label: 'Idea2Software', to: '/products/campus-suite' },
   { label: 'Campus360', to: '/products/campus-suite#modules' },
   { label: 'CampusCMS', to: '/products/campus-suite#modules' },
@@ -13,6 +15,10 @@ const productLinks = [
 
 const companyLinks = [
   { label: 'About Us', to: '/about' },
+  { label: 'Website Development', to: '/services/website-development' },
+  { label: 'Website Development Khargone', to: '/website-development-khargone' },
+  { label: 'Custom Development', to: '/custom-development' },
+  { label: 'Pricing', to: '/pricing' },
   { label: 'Contact', to: '/contact' },
   { label: 'Book a Demo', to: '/contact' },
   { label: 'Sitemap', to: '/sitemap' },
@@ -42,7 +48,7 @@ const Footer = () => {
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 12.5, color: '#9CA3AF' }}>
               <span>🇮🇳</span>
-              <span>Made in Gwalior, India</span>
+              <span>Made in Khargone, Madhya Pradesh, India</span>
             </div>
           </div>
 
@@ -85,7 +91,7 @@ const Footer = () => {
 
         <div style={{ borderTop: '1px solid #F3F4F6', paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
           <span style={{ fontSize: 13, color: '#9CA3AF' }}>© {year} CampusSafar Technologies Pvt. Ltd. All rights reserved.</span>
-          <span style={{ fontSize: 13, color: '#9CA3AF' }}>Madhya Pradesh, India</span>
+          <span style={{ fontSize: 13, color: '#9CA3AF' }}>Khargone, Madhya Pradesh, India</span>
         </div>
       </div>
 

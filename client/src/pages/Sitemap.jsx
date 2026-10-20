@@ -25,6 +25,13 @@ const groups = [
     links: [
       { label: 'SF StudyBoard', to: '/products/studyboard' },
       { label: 'Idea2Software (Campus Suite)', to: '/products/campus-suite' },
+      { label: 'School Management Software (AMMS)', to: '/school-management-software' },
+      { label: 'Coaching Institute Software', to: '/coaching-institute-software' },
+      { label: 'CampusCMS', to: '/products/campus-management-system' },
+      { label: 'CampusSeating', to: '/products/exam-seating-arrangement-software' },
+      { label: 'Campus360', to: '/products/student-development-tracking-system' },
+      { label: 'CampusERP', to: '/products/school-fee-admission-management-system' },
+      { label: 'CampusDocs', to: '/products/certificate-document-management-system' },
     ]
   },
   {
